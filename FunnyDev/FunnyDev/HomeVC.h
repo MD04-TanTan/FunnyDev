@@ -7,8 +7,13 @@
 //
 
 #import "BaseVC.h"
+#import "TFHpple.h"
+#import "PostObject.h"
 
-@interface HomeVC : UIViewController <UITableViewDataSource,UITableViewDataSource>
+@interface HomeVC : UIViewController <UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tbvMain;
-
+@property NSMutableArray * dataSource;
+@property NSMutableArray * arrURL;
+@property NSMutableData * data;
+@property PostObject * object;
 @end
