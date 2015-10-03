@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tbvMain;
 @property NSMutableArray * dataSource;
 @property NSMutableArray * arrURL;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicatorProcess;
 @property NSMutableData * data;
 @property PostObject * object;
 @end

@@ -10,4 +10,6 @@
 
 @implementation PostObject
 @synthesize title,urlImage,nameUser;
+
+
 @end

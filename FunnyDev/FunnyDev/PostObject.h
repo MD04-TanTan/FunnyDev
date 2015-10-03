@@ -12,4 +12,7 @@
 @property NSString * title;
 @property NSString * urlImage;
 @property NSString * nameUser;
+@property NSString * urlDetail;
+
+
 @end

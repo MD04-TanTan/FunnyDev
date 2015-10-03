@@ -12,6 +12,7 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    NSLog(@"draw ");
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

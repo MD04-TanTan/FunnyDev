@@ -1,45 +1,75 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" rowHeight="255" id="1kt-x1-Eic" customClass="CustomCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="255"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" rowHeight="292" id="1kt-x1-Eic" customClass="CustomCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="292"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1kt-x1-Eic" id="WGn-r0-Q6G">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="254"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Yf-cT-8Dg">
-                        <rect key="frame" x="8" y="8" width="304" height="29"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Image" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Yf-cT-8Dg">
+                        <rect key="frame" x="8" y="0.0" width="304" height="84"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="84" id="6hC-ia-fn5"/>
+                            <constraint firstAttribute="width" constant="304" id="xLd-gV-EqE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name User" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdy-w4-D8m">
-                        <rect key="frame" x="60" y="219" width="185" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.70000000000000007" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name User" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdy-w4-D8m">
+                        <rect key="frame" x="8" y="262" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Bjz-mi-Ovk"/>
+                            <constraint firstAttribute="width" constant="304" id="kCE-xO-IzK"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainbutton1.png" translatesAutoresizingMaskIntoConstraints="NO" id="dUT-Jb-bdW">
-                        <rect key="frame" x="8" y="37" width="304" height="167"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no-image-available.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dUT-Jb-bdW">
+                        <rect key="frame" x="8" y="87" width="304" height="167"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="304" id="eDh-0x-wB7"/>
+                            <constraint firstAttribute="height" constant="167" id="yWz-M5-BjR"/>
+                        </constraints>
                     </imageView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="dUT-Jb-bdW" firstAttribute="trailing" secondItem="Gdy-w4-D8m" secondAttribute="trailing" id="39a-7G-y7s"/>
+                    <constraint firstItem="dUT-Jb-bdW" firstAttribute="leading" secondItem="WGn-r0-Q6G" secondAttribute="leadingMargin" id="3AM-tb-966"/>
+                    <constraint firstItem="dUT-Jb-bdW" firstAttribute="leading" secondItem="Gdy-w4-D8m" secondAttribute="leading" id="4e5-bl-k0A"/>
+                    <constraint firstItem="Gdy-w4-D8m" firstAttribute="leading" secondItem="WGn-r0-Q6G" secondAttribute="leadingMargin" id="KBP-k2-ZKR"/>
+                    <constraint firstItem="dUT-Jb-bdW" firstAttribute="leading" secondItem="WGn-r0-Q6G" secondAttribute="leadingMargin" id="Nfj-0a-IdG"/>
+                    <constraint firstItem="6Yf-cT-8Dg" firstAttribute="trailing" secondItem="WGn-r0-Q6G" secondAttribute="trailingMargin" id="Uyc-Mt-m6R"/>
+                    <constraint firstItem="6Yf-cT-8Dg" firstAttribute="leading" secondItem="WGn-r0-Q6G" secondAttribute="leadingMargin" id="V5r-d0-8do"/>
+                    <constraint firstItem="dUT-Jb-bdW" firstAttribute="trailing" secondItem="WGn-r0-Q6G" secondAttribute="trailingMargin" id="ZRb-5N-aIc"/>
+                    <constraint firstItem="6Yf-cT-8Dg" firstAttribute="top" secondItem="WGn-r0-Q6G" secondAttribute="topMargin" constant="-8" id="e1N-wT-qeq"/>
+                    <constraint firstItem="Gdy-w4-D8m" firstAttribute="top" secondItem="dUT-Jb-bdW" secondAttribute="bottom" constant="8" symbolic="YES" id="fE6-GG-pnu"/>
+                    <constraint firstItem="6Yf-cT-8Dg" firstAttribute="leading" secondItem="dUT-Jb-bdW" secondAttribute="trailing" constant="-304" id="g2S-fP-uA8"/>
+                    <constraint firstItem="dUT-Jb-bdW" firstAttribute="top" secondItem="6Yf-cT-8Dg" secondAttribute="bottom" constant="3" id="p5Q-qc-shx"/>
+                    <constraint firstItem="dUT-Jb-bdW" firstAttribute="trailing" secondItem="WGn-r0-Q6G" secondAttribute="trailingMargin" id="qUw-hg-FlT"/>
+                    <constraint firstItem="Gdy-w4-D8m" firstAttribute="trailing" secondItem="WGn-r0-Q6G" secondAttribute="trailingMargin" id="uOt-Dq-PuB"/>
+                    <constraint firstItem="Gdy-w4-D8m" firstAttribute="bottom" secondItem="WGn-r0-Q6G" secondAttribute="bottomMargin" id="zP0-bi-ZZE"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="imageViewMain" destination="dUT-Jb-bdW" id="gYS-EL-f3U"/>
                 <outlet property="lblNameUser" destination="Gdy-w4-D8m" id="nuX-Bt-BYa"/>
                 <outlet property="lblTitle" destination="6Yf-cT-8Dg" id="p9z-qA-xx2"/>
             </connections>
-            <point key="canvasLocation" x="323" y="225.5"/>
+            <point key="canvasLocation" x="323" y="242"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="mainbutton1.png" width="200" height="200"/>
+        <image name="no-image-available.jpg" width="800" height="450"/>
     </resources>
 </document>

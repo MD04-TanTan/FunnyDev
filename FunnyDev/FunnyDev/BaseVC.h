@@ -12,6 +12,8 @@
 #import "PostObject.h"
 #import "UIImageView+WebCache.h"
 #import "UIImage+GIF.h"
+#import "DetailVC.h"
+#import "Singleton.h"
 
 #define kURL @"http://devvui.com/page/"
 
