@@ -11,7 +11,6 @@
 		2E6FF2D91BB5465B00473CAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6FF2D81BB5465B00473CAD /* AppDelegate.m */; };
 		2E6FF2DF1BB5465B00473CAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E6FF2DD1BB5465B00473CAD /* Main.storyboard */; };
 		2E6FF2E11BB5465B00473CAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E6FF2E01BB5465B00473CAD /* Assets.xcassets */; };
-		2E6FF2E41BB5465B00473CAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E6FF2E21BB5465B00473CAD /* LaunchScreen.storyboard */; };
 		2E6FF2ED1BB547AF00473CAD /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6FF2EC1BB547AF00473CAD /* BaseVC.m */; };
 		2E6FF2F01BB547C900473CAD /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6FF2EF1BB547C900473CAD /* HomeVC.m */; };
 		2E6FF2F41BB5483200473CAD /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6FF2F21BB5483200473CAD /* CustomCell.m */; };
@@ -52,7 +51,6 @@
 		2E6FF2D81BB5465B00473CAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2E6FF2DE1BB5465B00473CAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E6FF2E01BB5465B00473CAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2E6FF2E31BB5465B00473CAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E6FF2E51BB5465B00473CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E6FF2EB1BB547AF00473CAD /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
 		2E6FF2EC1BB547AF00473CAD /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
@@ -161,7 +159,6 @@
 				2E6FF2DD1BB5465B00473CAD /* Main.storyboard */,
 				2E9092381BB67AFB00BB4F9C /* Resource */,
 				2E6FF2E01BB5465B00473CAD /* Assets.xcassets */,
-				2E6FF2E21BB5465B00473CAD /* LaunchScreen.storyboard */,
 				2E6FF2E51BB5465B00473CAD /* Info.plist */,
 				2E6FF2D41BB5465B00473CAD /* Supporting Files */,
 			);
@@ -328,7 +325,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				650A0A481BB7A7B700290B01 /* no-image-available.jpg in Resources */,
-				2E6FF2E41BB5465B00473CAD /* LaunchScreen.storyboard in Resources */,
 				2E6FF2E11BB5465B00473CAD /* Assets.xcassets in Resources */,
 				2E6FF2F51BB5483200473CAD /* CustomCell.xib in Resources */,
 				2E6FF2DF1BB5465B00473CAD /* Main.storyboard in Resources */,
@@ -382,14 +378,6 @@
 				2E6FF2DE1BB5465B00473CAD /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2E6FF2E21BB5465B00473CAD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2E6FF2E31BB5465B00473CAD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -478,8 +466,6 @@
 		2E6FF2E91BB5465B00473CAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = FunnyDev/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -492,8 +478,6 @@
 		2E6FF2EA1BB5465B00473CAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = FunnyDev/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
